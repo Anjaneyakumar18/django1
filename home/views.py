@@ -9,3 +9,6 @@ def home(request):
 
 def home2(request):
     return HttpResponse("This is the alternative home page.")
+
+def home3(request):
+    return HttpResponse("<h1>I am ak</h1><h2>I am batman </h2>")
