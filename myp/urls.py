@@ -16,9 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from home.views import home, home2
+from home.views import home, home2, home3
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', home, name='home'),
-    path('', home2, name='homepage'),  # 👈 This line makes '/' work
+    path('', home2, name='homepage'), 
+    path('home3',home3,name="home3")# 👈 This line makes '/' work
 ]
